@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero{
+    position: relative;
+    background: #825DD2;
+    height: 100vh;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 100%;
+    background: radial-gradient(circle, #bd9fff, transparent,transparent);
+    z-index: 1;
+ 
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1000;
+}
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Anton", sans-serif;
+}
+header .nav_links{
+    display: flex;
+    gap: 40px;
+}
+header .nav_links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+
+.hero .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+.hero h1{
+    font-size: 28vw;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: "Anton", sans-serif;
+}
+
+
+#cans{
+    position: absolute;
+        width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+
+#leaf{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    z-index: 10;
+}
+
+#leaf3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+#blackberry1{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 13vw;
+}
+
+#blackberry2{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 15vw;
+  
+}
+#blackberry3{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 6vw;
+    
+}
+
+
+/* About */
+.about {
+    padding: 100px 0;
+    height: 100vh;
+}
+.about .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about  .text{
+    width: 50%;
+}
+
+.about  .text h2{
+    font-size: 3.5vw;
+    color: #0d071c;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 20;
+}
+.about  .text h2 span{
+    color: #825DD2;
+}
+.about  .text .boxs{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.about  .text .boxs .box img{
+    width: 25%;
+    rotate: 60deg;
+
+}
+.about  .text .boxs .box h4{
+    color: #0d071c;
+    margin: 20px 0 10px;
+    font-size: 1.1vw;
+}
+.about  .text .boxs .box p{
+    font-size: 0.9vw;
+    color: #4b4b4b;
+}
+.about  .text .btn{
+    padding: 15px 45px;
+    font-size: 18px;
+    border: 1px solid #825DD2;
+    background: #825DD2;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.stand{
+    height: 85vh;
+    background: #bd9fff;
+    display: flex;
+    justify-content: centere;
+    align-items: center;
+    padding-top: 130px;
+
+}
+.stand .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.stand img{
+    width: 55%;
+}
+
+.stand h3{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26vh;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    color: #6a47b4;
+    letter-spacing: 7px;
+}
